@@ -1,0 +1,54 @@
+<th:block th:fragment="modalWithdraw">
+    <div class="modal fade modal-lg" id="modalWithdraw" tabindex="-1" aria-labelledby="editModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Withdraw</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="error-area hide"></div>
+                    <form method="post" id="frmWithdraw">
+                    <div class="row mb-3">
+                        <div hidden class="col-lg-6">
+                            <label class="fw-bold">Customer ID</label>
+                            <input type="text" class="form-control" id="idWithdraw" readonly>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="fw-bold">Full Name</label>
+                            <input type="text" class="form-control" id="fullNameWithdraw" readonly>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="fw-bold">Email</label>
+                            <input type="text" class="form-control" id="emailWithdraw" readonly>
+                        </div>
+                        <div hidden class="col-lg-6">
+                            <label class="fw-bold">Phone</label>
+                            <input type="text" class="form-control" id="phoneWithdraw" readonly>
+                        </div>
+                        <div hidden class="col-lg-6">
+                            <label class="fw-bold">Address</label>
+                            <input type="text" class="form-control" id="addressWithdraw" readonly>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <label class="fw-bold">Current balance ($)</label>
+                            <input type="text" class="form-control num-space" id="balanceWithdraw" readonly>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="fw-bold">Transaction Amount ($)</label>
+                            <input type="number" class="form-control num-space" id="transactionAmountWithdraw">
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info" id="btnWithdraw">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</th:block>
